@@ -4,6 +4,7 @@ import { registerLicense } from '@syncfusion/ej2-base'
 import './index.css'
 import App from './App.jsx'
 
+import { ContextProvider } from './contexts/ContextProvider';
 // Syncfusion CSS Imports
 import '@syncfusion/ej2-base/styles/material.css';
 import '@syncfusion/ej2-buttons/styles/material.css';
@@ -15,6 +16,8 @@ registerLicense("Ngo9BigBOggjHTQxAR8/V1JGaF5cX2NCf1FpRmJGdld5fUVHYVZUTXxaS00DNHV
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ContextProvider>
+      <App />
+    </ContextProvider>
   </StrictMode>,
 )
