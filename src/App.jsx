@@ -8,7 +8,7 @@ import { Ecommerce, Orders, Employees, Customers, Kanban, Editor, Calender, Colo
 import './App.css'
 
 function App() {
-  const [activeMenu, setActiveMenu] = useState(false)
+  const [activeMenu, setActiveMenu] = useState(true)
 
   return (
     <div>
